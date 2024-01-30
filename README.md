@@ -49,7 +49,8 @@ git --version
 ## Now we will clone our repo onto the instance
 
 ```
-git clone https://github.com/darrensw777/node-js-jwt-auth-mongodb.git . // To clone into same folder
+git clone https://github.com/darrensw777/node-js-jwt-auth-mongodb.git
+cd node-js-jwt-auth-mongodb
 npm install
 ```
 
