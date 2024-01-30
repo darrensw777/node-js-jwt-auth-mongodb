@@ -9,13 +9,15 @@ sudo su -
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 ```
 
-### Activate nvm using the following command:
+### Activate nvm and run the following to use it now:
 
 ```
-. ~/.nvm/nvm.sh
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 ```
 
-### Use nvm to install NodeJS:
+### Use nvm to install NodeJS (this is correct, not npm):
 
 ```
 nvm install node
@@ -34,8 +36,8 @@ npm -v
 ### To install Git, run the commands below:
 
 ```
-sudo apt-get update -y
-apt-get install git -y
+sudo apt-get update -y OR sudo yum update -y
+apt-get install git -y OR yum install git -y
 ```
 
 ### Just to verify Git has installed correctly:
