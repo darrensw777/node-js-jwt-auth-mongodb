@@ -59,3 +59,34 @@ npm install
 ```
 nodemon server.js
 ```
+
+## Configure AWS endpoint
+
+### Set a security group and edit INBOUND rules to add:
+
+| Type       | Protocol | Port range | Source        |
+| ---------- | -------- | ---------- | ------------- |
+| SSH        | TCP      | 22         | Anywhere-IPv4 |
+| Custom TCP | TCP      | 8000-9000  | Anywhere-IPv4 |
+| HTTP       | TCP      | 22         | Anywhere-IPv4 |
+| HTTPS      | TCP      | 22         | Anywhere-IPv4 |
+
+### Set a security group and edit OUTBOUND rules to add:
+
+| Type        | Protocol | Port range | Source        |
+| ----------- | -------- | ---------- | ------------- |
+| All traffic | All      | All        | Anywhere-IPv4 |
+
+### Now get the endpoint:
+
+Look at your instance list and click the Instance ID
+link which will take you to an overview.
+
+On that page, look for: Public IPv4 address, combine that
+with you port to derive your url.
+
+e.g.
+
+http://34.244.202.78:8080
+
+**NB HTTP, NOT HTTPS**
