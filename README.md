@@ -33,7 +33,7 @@ npm -v
 ### Now install npm and pm2 globally
 
 ```
-npm inmstall npm -g
+npm install npm -g
 npm install pm2 -g
 ```
 
@@ -52,9 +52,7 @@ git --version
 
 ## STEP 2: Install Git and clone repository:
 
-## Now we will clone our repo onto the instance
-
-### IMPORTANT
+## IMPORTANT
 
 We now need to go back to being a user, type:
 
@@ -63,6 +61,8 @@ exit
 ```
 
 Your cursor will be ubutu@ip-\***\*\*\*\*\*\***
+
+### Now we will clone our repo onto the instance
 
 ```
 git clone https://github.com/darrensw777/node-js-jwt-auth-mongodb.git
