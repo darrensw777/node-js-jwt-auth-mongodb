@@ -28,8 +28,11 @@ nvm install node
 ```
 node -v
 npm -v
+```
 
-# Now install npm and pm2 globally
+### Now install npm and pm2 globally
+
+```
 npm inmstall npm -g
 npm install pm2 -g
 ```
@@ -53,10 +56,10 @@ git --version
 
 ### IMPORTANT
 
-We now need to go back to being a user:
+We now need to go back to being a user, type:
 
 ```
-type: exit
+exit
 ```
 
 Your cursor will be ubutu@ip-\***\*\*\*\*\*\***
@@ -96,7 +99,7 @@ Look at your instance list and click the Instance ID
 link which will take you to an overview.
 
 On that page, look for: Public IPv4 address, combine that
-with you port to derive your url.
+with the port the app runs on to derive your url.
 
 e.g.
 
