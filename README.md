@@ -50,7 +50,7 @@ apt-get install git -y OR yum install git -y
 git --version
 ```
 
-## STEP 2: Install Git and clone repository:
+## STEP 2: Clone the repository
 
 ## IMPORTANT
 
@@ -62,7 +62,7 @@ exit
 
 Your cursor will be ubutu@ip-\***\*\*\*\*\*\***
 
-### Now we will clone our repo onto the instance
+### Now we will clone our repo onto the instance:
 
 ```
 git clone https://github.com/darrensw777/node-js-jwt-auth-mongodb.git
