@@ -29,9 +29,10 @@ nvm install node
 node -v
 npm -v
 
+# Now install npm and pm2 globally
+npm inmstall npm -g
+npm install pm2 -g
 ```
-
-## STEP 2: Install Git and clone repository:
 
 ### To install Git, run the commands below:
 
@@ -46,7 +47,19 @@ apt-get install git -y OR yum install git -y
 git --version
 ```
 
+## STEP 2: Install Git and clone repository:
+
 ## Now we will clone our repo onto the instance
+
+### IMPORTANT
+
+We now need to go back to being a user:
+
+```
+type: exit
+```
+
+Your cursor will be ubutu@ip-\***\*\*\*\*\*\***
 
 ```
 git clone https://github.com/darrensw777/node-js-jwt-auth-mongodb.git
@@ -57,7 +70,7 @@ npm install
 ### Now let's start the server:
 
 ```
-nodemon server.js
+pm2 start server.js
 ```
 
 ## Configure AWS endpoint
