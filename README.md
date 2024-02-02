@@ -30,7 +30,7 @@ node -v
 npm -v
 ```
 
-### Now install npm and pm2 globally
+### Now install npm and pm2 globally:
 
 ```
 npm install npm -g
